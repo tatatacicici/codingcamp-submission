@@ -1,0 +1,15 @@
+#Menjalankan skrip
+python3 main.py
+
+#Menjalankan unit test pada folder test
+$env:PYTHONPATH="." ; python3 -m pytest tests
+
+
+#Menjalankan test coverage
+$env:PYTHONPATH="." ; coverage run -m pytest tests
+coverage html
+start htmlcov\index.html
+
+
+#link google sheets url
+https://docs.google.com/spreadsheets/d/1qllytiyXDzS1qbmQ-JtITj9GBoZsv1QqDQevmv1NCME/edit?usp=sharing
